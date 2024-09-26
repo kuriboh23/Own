@@ -13,7 +13,7 @@ class CompteBancaire(var titulaire:String, var solde:Double){
                 afficherSolde()
                 solde -= r
                 println("You withdraw $r$. \n|-- Your balance: $solde\$ --|")
-            }else println("Your balance $solde is less than your withdraw $r")
+            }else println("Your balance $solde$ is less than your withdraw $r")
         }else println("Sorry, you don't have enough balance --> $solde$")
     }
 
