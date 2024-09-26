@@ -28,8 +28,8 @@ fun main(){
     val cmpt = CompteBancaire("CIH",10.0)
 
     cmpt.retrait(10.0)
-    cmpt.retrait(10.0)
-    cmpt.depot(5.0)
-    cmpt.retrait(10.0)
-    cmpt.retrait(05.0)
+//    cmpt.retrait(10.0)
+//    cmpt.depot(5.0)
+//    cmpt.retrait(10.0)
+//    cmpt.retrait(05.0)
 }
