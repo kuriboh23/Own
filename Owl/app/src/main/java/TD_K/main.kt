@@ -1,5 +1,14 @@
 package TD_K
 
+fun mention(note:Int):String{
+    when(note){
+        in 16..20 -> return ("Excellent")
+        in 14..15 -> return ("Très bien")
+        in 12..13 -> return ("Bien")
+        in 10..11 -> return ("Assez bien")
+        else -> return ("Échec")
+    }
+}
 
 fun main(){
     print("Saisir un nombre: ")
@@ -29,13 +38,7 @@ fun main(){
                 var result = moy / numInput
                 println("La moyenne est: $result")
 
-                when(result){
-                    in 16..20 -> println("Excellent")
-                    in 14..15 -> println("Très bien")
-                    in 12..13 -> println("Bien")
-                    in 10..11 -> println("Assez bien")
-                    else -> println("Échec")
-                }
+                println(mention(result))
             }
         }
         else{
@@ -58,13 +61,7 @@ fun main(){
             var result = moy / numRepeat
             println("La moyenne est: $result")
 
-            when(result){
-                in 16..20 -> println("Excellent")
-                in 14..15 -> println("Très bien")
-                in 12..13 -> println("Bien")
-                in 10..11 -> println("Assez bien")
-                else -> println("Échec")
-            }
+            println(mention(result))
         }
     }
 

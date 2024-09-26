@@ -21,7 +21,6 @@ class CompteBancaire(var titulaire:String, var solde:Double){
         println("|--- Your balance: $solde\$ ---|")
     }
 
-
 }
 
 fun main(){
