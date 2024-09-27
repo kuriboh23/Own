@@ -15,7 +15,6 @@ fun main(){
     val numInput = readLine()?.toIntOrNull()
 
     var moy = 0
-    var checkNegatif = true
 
     if (numInput != null){
         if (numInput !=0){
@@ -25,21 +24,19 @@ fun main(){
                 var num = readLine()?.toIntOrNull()
                 if (num != null){
                     if (num < 0){
-                        checkNegatif = false
                         println("The num is less than 0")
-                        break
+                        i--
                     }else{
                         moy += num
                     }
                 }
             }
-            if (checkNegatif){
 
                 var result = moy / numInput
                 println("La moyenne est: $result")
 
                 println(mention(result))
-            }
+            
         }
         else{
             var numRepeat = 0
