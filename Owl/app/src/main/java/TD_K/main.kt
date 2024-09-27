@@ -25,7 +25,7 @@ fun main(){
                 if (num != null){
                     if (num < 0){
                         println("The num is less than 0")
-                        i--
+                        break
                     }else{
                         moy += num
                     }
